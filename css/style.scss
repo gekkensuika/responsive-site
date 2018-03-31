@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "compass";
 $baseColor:#bbbbbb;
 $fontColor:#14c0c9;
@@ -87,7 +88,7 @@ footer{
 
 
 // desktop
-@media (min-width: 789px) {
+@media (min-width: 769px) {
   
   /* Top Image
 ------------------------------------------------------------*/
