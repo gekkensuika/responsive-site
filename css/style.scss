@@ -1,0 +1,105 @@
+@import "compass";
+$baseColor:#bbbbbb;
+$fontColor:#14c0c9;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+    font-family:"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+}
+
+/* Font
+------------------------------------------------------------*/
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+    color: $fontColor;
+    margin-bottom: 10px;
+}
+
+/* text Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+  
+
+/* Main Image
+------------------------------------------------------------*/
+@mixin topImage{
+  background:{
+      image: url("../images/cat.jpg");
+      size: cover;
+      position: center center;
+  }
+  width: 100%;
+}
+
+.top{
+  @include topImage;
+  height: 250px;
+  }
+
+/* Main Contents
+------------------------------------------------------------*/
+main{
+    background-color: $baseColor;
+}
+.title{
+    padding:10px;
+}
+.contents{
+    margin: 0 auto;
+    @include display-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include clearfix;
+}
+
+.box{
+    @include flex(1);
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    @include box-sizing(border-box);
+}
+
+
+/* Footer
+------------------------------------------------------------*/
+footer{
+    margin: 10px;
+}
+.button{
+    background-color: $baseColor;
+    @include border-radius(4px);
+    margin: 10px auto;
+    padding: 10px;
+    width: 100px;
+}
+
+
+
+// desktop
+@media (min-width: 789px) {
+  
+  /* Top Image
+------------------------------------------------------------*/
+.top{
+  @include topImage;
+  height: 500px;
+}
+
+/* Main Contents
+------------------------------------------------------------*/
+.contents{
+    flex-direction: row;
+}
+  
+}

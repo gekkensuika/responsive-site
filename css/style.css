@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: .1em; }
+
+/* Font
+------------------------------------------------------------*/
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 2rem;
+  color: #14c0c9;
+  margin-bottom: 10px; }
+
+/* text Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Main Image
+------------------------------------------------------------*/
+.top {
+  background-image: url("../images/cat.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 250px; }
+
+/* Main Contents
+------------------------------------------------------------*/
+main {
+  background-color: #bbbbbb; }
+
+.title {
+  padding: 10px; }
+
+.contents {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  *zoom: 1; }
+
+.box {
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  margin: 10px; }
+
+.button {
+  background-color: #bbbbbb;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin: 10px auto;
+  padding: 10px;
+  width: 100px; }
+
+@media (min-width: 789px) {
+  /* Top Image
+------------------------------------------------------------*/
+  .top {
+    background-image: url("../images/cat.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 500px; }
+
+  /* Main Contents
+  ------------------------------------------------------------*/
+  .contents {
+    flex-direction: row; } }
+
+/*# sourceMappingURL=style.css.map */
